@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1>
+    {{ title }}
+</h1>
+
+<ul>
+    {% for item in menu %}
+    <li><a href="{{item.url}}">{{item.name}}</a></li>
+    {% endfor %}
+</ul>
+
+{% block content %}
+ Контент не подвезли
+{% endblock %}
+</body>
+</html>

@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{{ title }}</title>
-</head>
-<body>
-<h1>
-    {{ title }}
-</h1>
+{% extends 'base.html' %}
 
-<ul>
-    {% for item in menu %}
-    <li>{{ item }}</li>
-    {% endfor %}
-</ul>
-</body>
-</html>
+{% block content %}
+Новый контент
+{% endblock %}
